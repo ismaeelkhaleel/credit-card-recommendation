@@ -1,0 +1,115 @@
+/* === GLOBAL STYLES === */
+body {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* === HEADING === */
+h1 {
+  color: #00e5ff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+/* === CONTROLS === */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #00e5ff;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 16px;
+  min-width: 220px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+  border-color: #00bcd4;
+}
+
+button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0097a7;
+  transform: translateY(-1px);
+}
+
+/* === CARD LIST === */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* === INDIVIDUAL CARD === */
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #202020);
+  border: 1px solid #2b2b2b;
+  border-radius: 14px;
+  padding: 25px;
+  width: 300px;
+  color: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #00e5ff;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+.card p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.card strong {
+  color: #80deea;
+}
+
+.no-results {
+  color: #777;
+  font-size: 18px;
+  margin-top: 40px;
+}
