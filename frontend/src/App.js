@@ -9,17 +9,17 @@ function App() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/categories")
+    fetch("https://credit-card-recommendation-iqx6.onrender.com/api/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
 
   const handleSearch = async () => {
     if (!selected) return;
-    const res = await fetch(`http://localhost:5000/api/cards/${selected}`);
+    const res = await fetch(`https://credit-card-recommendation-iqx6.onrender.com/api/cards/${selected}`);
     const data = await res.json();
     setCards(data);
-    setDisplayedCategory(selected); // 👈 update only when button clicked
+    setDisplayedCategory(selected);
   };
 
   return (
